@@ -1,0 +1,122 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Chivo', monospace;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  height: 100vh;
+  background: #f2f2f2;
+}
+
+span {
+  display: none;
+}
+
+img {
+  position: absolute;
+  z-index: 2;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  flex: none;
+  width: 800px;
+  height: 480px;
+  background-image: url("slideyo.jpg");
+  background-size: contain;
+  position: relative;
+}
+
+header {
+  height: 55px;
+  color: white;
+  line-height: 55px;
+  display: none;
+}
+
+.header-grid {
+  display: flex;
+}
+
+.header-cell {
+  flex: 1;
+}
+
+header .heading {
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.10);
+}
+
+header i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 25px !important;
+  margin: 0 23px 0 23px;
+}
+
+header .heading i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 22px !important;
+  margin: 5px;
+}
+
+header .icon-left {
+  text-align: left;
+}
+
+header .icon-right {
+  text-align: right;
+}
+
+#content {
+  height: 204px;
+  width: 398px;
+  margin: 246px 0 0 30px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.value {
+  font-family: Chivo-Light;
+  font-size: 30px;
+  color: #414141;
+}
+
+#temperature {
+  position: absolute;
+  top: 93px;
+  left: 64px;
+}
+
+#light {
+  position: absolute;
+  top: 93px;
+  left: 202px;
+}
+
+#humidity {
+  position: absolute;
+  top: 102px;
+  left: 343px;
+}

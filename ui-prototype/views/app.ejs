@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>AGRICYCLE</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css" />
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+<div class="container">
+    <div id="app">
+        <header>
+            <div class="header-grid">
+                <div class="header-cell icon-left"><a href="#"><i class="material-icons">keyboard_arrow_left</i></a></div>
+                <div class="header-cell heading"><i class="material-icons">bubble_chart</i> Live</div>
+                <div class="header-cell icon-right"><a href="#"><i class="material-icons">keyboard_arrow_down</i></a></div>
+            </div>
+        </header>
+        <div id="content">
+                <div id="map"></div>
+        </div>
+        <div id="temperature" class="value">23&deg;</div>
+        <div id="light" class="value">400</div>
+        <div id="humidity" class="value">62%</div>
+    </div>
+</div>
+<span id="traci-longitude"><%= longitude %></span>
+<span id="traci-latitude"><%= latitude %></span>
+
+<script src="agricycle.js"></script>
+</body>
+
+</html>
