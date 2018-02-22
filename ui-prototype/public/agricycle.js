@@ -62,4 +62,4 @@ let behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map))
 addStationToMap(map)
 addTraciToMap(map)
 
-setInterval(updateValues, 1000)
+// setInterval(updateValues, 1000)
